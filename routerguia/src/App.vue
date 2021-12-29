@@ -3,6 +3,7 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
+     <!-- <router-link :to="{name: 'cadastro', params:{dado:'Teste Cadastro'}}">Cadastrar</router-link>-->
       <router-link to="/cadastro">Cadastrar</router-link>
     </div>
     <router-view/>

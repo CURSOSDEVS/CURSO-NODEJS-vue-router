@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Cadastro from '../views/Cadastro.vue'
+import Aluno from '../views/Aluno.vue'
 
 Vue.use(VueRouter)
 
@@ -19,8 +20,15 @@ const routes = [
   },
   {
     path: '/cadastro',
-    name: 'cadastro',
-    component: Cadastro
+    name: 'Cadastro',
+    component: Cadastro,
+      children:[
+        {
+          path: 'aluno',
+          name: 'Aluno',
+          component: Aluno
+        }
+      ]
   }
 ]
 
